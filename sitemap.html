@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - Shan Sons Engineering Works</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .sitemap-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        }
+
+        .sitemap-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .sitemap-title {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .sitemap-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .sitemap-category {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .sitemap-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(var(--primary-rgb), 0.1);
+        }
+
+        .category-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid rgba(var(--primary-rgb), 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .category-title i {
+            width: 40px;
+            height: 40px;
+            background: rgba(var(--primary-rgb), 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .sitemap-category:hover .category-title i {
+            background: var(--primary-color);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .sitemap-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sitemap-link {
+            display: flex;
+            align-items: center;
+            color: #666;
+            padding: 0.8rem 0;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+        }
+
+        .sitemap-link:last-child {
+            border-bottom: none;
+        }
+
+        .sitemap-link i {
+            margin-right: 1rem;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .sitemap-link:hover {
+            color: var(--primary-color);
+            transform: translateX(10px);
+        }
+
+        .sitemap-link:hover i {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .sitemap-section {
+                padding: 4rem 0;
+            }
+
+            .sitemap-title {
+                font-size: 2rem;
+            }
+
+            .category-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ========================= Sitemap Section ========================= -->
+    <section class="sitemap-section">
+        <div class="container">
+            <div class="sitemap-header">
+                <h1 class="sitemap-title">Sitemap</h1>
+                <p class="sitemap-subtitle">Navigate through our website structure</p>
+            </div>
+
+            <div class="row">
+                <!-- Main Pages -->
+                <div class="col-lg-6">
+                    <div class="sitemap-category">
+                        <h2 class="category-title">
+                            <i class="fas fa-compass"></i>
+                            Main Pages
+                        </h2>
+                        <ul class="sitemap-list">
+                            <li><a href="index.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Home
+                            </a></li>
+                            <li><a href="about.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                About Us
+                            </a></li>
+                            <li><a href="services.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Our Services
+                            </a></li>
+                            <li><a href="products.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Products
+                            </a></li>
+                            <li><a href="contact.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Contact Us
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div class="col-lg-6">
+                    <div class="sitemap-category">
+                        <h2 class="category-title">
+                            <i class="fas fa-box-open"></i>
+                            Products
+                        </h2>
+                        <ul class="sitemap-list">
+                            <li><a href="products/engine-parts.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Engine Parts
+                            </a></li>
+                            <li><a href="products/machinery.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Industrial Machinery
+                            </a></li>
+                            <li><a href="products/textile.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Textile Machinery
+                            </a></li>
+                            <li><a href="products/spare-parts.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Spare Parts
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-6">
+                    <div class="sitemap-category">
+                        <h2 class="category-title">
+                            <i class="fas fa-cogs"></i>
+                            Services
+                        </h2>
+                        <ul class="sitemap-list">
+                            <li><a href="services/manufacturing.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Manufacturing
+                            </a></li>
+                            <li><a href="services/maintenance.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Maintenance & Repair
+                            </a></li>
+                            <li><a href="services/consulting.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Engineering Consulting
+                            </a></li>
+                            <li><a href="services/custom.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Custom Solutions
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-6">
+                    <div class="sitemap-category">
+                        <h2 class="category-title">
+                            <i class="fas fa-hands-helping"></i>
+                            Support
+                        </h2>
+                        <ul class="sitemap-list">
+                            <li><a href="support/faq.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                FAQ
+                            </a></li>
+                            <li><a href="support/documentation.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Documentation
+                            </a></li>
+                            <li><a href="support/warranty.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Warranty Information
+                            </a></li>
+                            <li><a href="support/contact.html" class="sitemap-link">
+                                <i class="fas fa-chevron-right"></i>
+                                Technical Support
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p>&copy; <span id="currentYear"></span> Shan Sons. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-links">
+                            <a href="privacy.html">Privacy Policy</a>
+                            <a href="terms.html">Terms of Service</a>
+                            <a href="sitemap.html">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto update year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
